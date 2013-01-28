@@ -1,13 +1,12 @@
-#include <iostream>
 #include <cstdlib>
 
-#include "ngn/hello.hpp"
+#include "ngn/ngn.hpp"
 
-using std::cout;
-using std::endl;
+using ngn::Hello;
+using ngn::MainLoop;
 
 int main(int argc, char* argv[]) {
-    cout << "Hello, ngnrun!" << endl;
-    ngn::SayHello("libngn");
+    Hello("ngnrun");
+    MainLoop();
     return EXIT_SUCCESS;
 }
